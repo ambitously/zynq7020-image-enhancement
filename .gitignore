@@ -1,0 +1,126 @@
+# ------------------------------------------------------------
+# Repository focus:
+# Keep the Vivado hardware project, the active Vitis platform,
+# and the active Vitis application source tree.
+# ------------------------------------------------------------
+
+# OS / editor junk
+Thumbs.db
+.DS_Store
+Desktop.ini
+*.tmp
+*.bak
+*.swp
+nul
+tmpclaude-*
+
+# Top-level transient folders/files
+.metadata/
+RemoteSystemsTempFiles/
+.analytics
+IDE.log
+
+# Logs
+*.log
+*.jou
+*.str
+*.pb
+*.cache
+ip_upgrade.log
+min_area_pfile.tmp
+vitis_pid*
+vivado_pid*
+vivado_*.backup.jou
+vivado_*.backup.log
+
+# ------------------------------------------------------------
+# Keep only the active Vivado/Vitis projects
+# ------------------------------------------------------------
+
+# Ignore duplicate/obsolete Vitis platform copy
+design_1_wrapper/
+
+# Ignore Vitis system wrapper project (generated packaging/debug shell)
+ov5640_hdmi_system/
+V2_ov5640_hdmi/ov5640_frame_system/
+
+# Ignore older duplicate Vitis application snapshot
+V2_ov5640_hdmi/ov5640_frame/
+
+# Ignore legacy SDK workspace under Vivado project
+V2_ov5640_hdmi/ov5640_hdmi.sdk/
+
+# Ignore duplicate generated platform under Vivado project
+V2_ov5640_hdmi/design_1_wrapper_platform_1_1/
+
+# Ignore older duplicate Vivado subproject snapshot
+V2_ov5640_hdmi/23_ov5640_lcd/
+
+# Ignore nested transient folders
+V2_ov5640_hdmi/.metadata/
+V2_ov5640_hdmi/RemoteSystemsTempFiles/
+
+# ------------------------------------------------------------
+# Vivado generated content to ignore
+# ------------------------------------------------------------
+V2_ov5640_hdmi/.Xil/
+V2_ov5640_hdmi/ov5640_hdmi.cache/
+V2_ov5640_hdmi/ov5640_hdmi.hw/
+V2_ov5640_hdmi/ov5640_hdmi.ip_user_files/
+V2_ov5640_hdmi/ov5640_hdmi.runs/
+V2_ov5640_hdmi/ov5640_hdmi.sim/
+V2_ov5640_hdmi/ov5640_hdmi.tmp/
+V2_ov5640_hdmi/**/.Xil/
+V2_ov5640_hdmi/**/*.cache/
+V2_ov5640_hdmi/**/*.hw/
+V2_ov5640_hdmi/**/*.ip_user_files/
+V2_ov5640_hdmi/**/*.runs/
+V2_ov5640_hdmi/**/*.sim/
+V2_ov5640_hdmi/**/*.tmp/
+
+# Optional Vivado generated metadata we do not need to track
+V2_ov5640_hdmi/ov5640_hdmi.srcs/**/*.jou
+V2_ov5640_hdmi/ov5640_hdmi.srcs/**/*.log
+
+# ------------------------------------------------------------
+# Vitis application generated content to ignore
+# ------------------------------------------------------------
+ov5640_hdmi/Debug/
+ov5640_hdmi/Release/
+ov5640_hdmi/_ide/
+ov5640_hdmi/**/*.o
+ov5640_hdmi/**/*.d
+ov5640_hdmi/**/*.elf
+ov5640_hdmi/**/*.size
+ov5640_hdmi/**/*.mk
+
+# Ignore Eclipse metadata inside the app project
+ov5640_hdmi/.cproject
+ov5640_hdmi/.project
+
+# ------------------------------------------------------------
+# Vitis platform generated content to ignore
+# ------------------------------------------------------------
+platform/.log/
+platform/logs/
+platform/tempdsa/
+platform/export/
+platform/ps7_cortexa9_0/
+platform/zynq_fsbl/
+
+# Ignore Eclipse metadata inside the platform project
+platform/.cproject
+platform/.project
+
+# ------------------------------------------------------------
+# General build outputs
+# ------------------------------------------------------------
+*.o
+*.d
+*.elf
+*.bin
+*.hex
+*.map
+*.mcs
+*.prm
+*.ltx
